@@ -14,6 +14,16 @@ Unreleased
 - :meth:`.Inbox.mark_all_read` to mark all messages as read with one API call.
 - :meth:`~.InboxableMixin.unblock_subreddit` to unblock a subreddit.
 - :meth:`.update_crowd_control_level` to update the crowd control level of a post.
+- :class:`.Draft` to represent a submission draft.
+- :class:`.DraftList` to represent a list of :class:`.Draft` objects.
+- :class:`.DraftHelper` to fetch or create drafts on new Reddit.
+- :meth:`.Draft.delete` to delete drafts.
+- :meth:`.Draft.submit` to submit drafts.
+- :meth:`.Draft.update` to modify drafts.
+
+**Changed**
+
+- :meth:`.Reddit.delete` now accepts the ``params`` parameter.
 
 7.3.0 (2021/06/17)
 ------------------
